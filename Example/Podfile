@@ -1,2 +1,2 @@
 platform :ios, '7.0'
-pod 'RUMSlidingMenu', :path => '~/Dev/Misc/RUMSlidingMenu/RUMSlidingMenu/'
+pod 'RUMSlidingMenu'
