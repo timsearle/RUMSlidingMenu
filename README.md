@@ -3,11 +3,25 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/RUMSlidingMenu/badge.png)](http://cocoadocs.org/docsets/RUMSlidingMenu)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/RUMSlidingMenu/badge.png)](http://cocoadocs.org/docsets/RUMSlidingMenu)
 
+## Overview
+A generic sliding menu component, that supports a left- and right-handside background menus.
+
+Based on the [RayWenderlich](http://www.raywenderlich.com/32054/how-to-create-a-slide-out-navigation-like-facebook-and-path" How to Create a Slide-Out Navigation Panel") tutorial, but improved to be less coupled to the displayed UIViewControllers, for easier integration to other projects.
+
+####Version 1.0
+
+* Supports left and right background menus
+
+####TODO
+
+* Add gesture recognition for dragging
+* Support landscape and 
+* Use AutoLayout constraints for animating the positioning of the views
+
+
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -18,7 +32,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-Tim Searle, timothy.searle@accenture.com
+Tim Searle
 
 ## License
 

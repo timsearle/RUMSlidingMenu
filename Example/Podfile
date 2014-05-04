@@ -1,7 +1,2 @@
-pod "RUMSlidingMenu", :path => "../"
-
-target "Demo" do
-end
-
-target "DemoTests" do
-end
+platform :ios, '7.0'
+pod 'RUMSlidingMenu', :path => '~/Dev/Misc/RUMSlidingMenu/RUMSlidingMenu/'

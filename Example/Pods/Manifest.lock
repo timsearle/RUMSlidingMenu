@@ -1,0 +1,14 @@
+PODS:
+  - RUMSlidingMenu (1.0.0)
+
+DEPENDENCIES:
+  - RUMSlidingMenu (from `~/Dev/Misc/RUMSlidingMenu/RUMSlidingMenu/`)
+
+EXTERNAL SOURCES:
+  RUMSlidingMenu:
+    :path: ~/Dev/Misc/RUMSlidingMenu/RUMSlidingMenu/
+
+SPEC CHECKSUMS:
+  RUMSlidingMenu: 7b810913de7da6eccdb163ac601cf4d0f049e1d4
+
+COCOAPODS: 0.32.1
