@@ -8,9 +8,9 @@ A generic sliding menu component, that supports a left- and right-handside backg
 
 Based on the [RayWenderlich](http://www.raywenderlich.com/32054/how-to-create-a-slide-out-navigation-like-facebook-and-path" How to Create a Slide-Out Navigation Panel") tutorial, but improved to be less coupled to the displayed UIViewControllers, for easier integration to other projects.
 
-####Version 1.0
+####Version 1.1.0
 
-* Supports left and right background menus
+* Introduced an `NSNotification` to broadcast when the menu is opening or closing
 
 ####TODO
 

@@ -3,7 +3,7 @@
 //  SlidingMenu
 //
 //  Created by Tim Searle on 18/03/2014.
-//  Copyright (c) 2014 Accenture. All rights reserved.
+//  Copyright (c) 2014 All rights reserved.
 //
 
 @interface LeftMenuViewController : UIViewController

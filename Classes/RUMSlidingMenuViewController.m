@@ -32,6 +32,10 @@ static const CGFloat kAnimationInitialVelocity = 10.0f;
 
 @implementation RUMSlidingMenuViewController
 
+#pragma mark - Constants
+
+NSString *const kSlidingMenuStateChangeNotification = @"slidingMenuStateHasChanged";
+
 #pragma mark - SlidingMenuViewController
 
 - (instancetype)initWithRootViewController:(UIViewController<RUMSlidingMenuCenterProtocol> *)rootViewController
@@ -117,6 +121,9 @@ static const CGFloat kAnimationInitialVelocity = 10.0f;
 {
     NSAssert(self.rightViewController != nil, @"rightViewController must not be nil if attempting to reveal");
     
+    RUMSlidingMenuState state = self.rightViewVisible ? RUMSlidingMenuStateClosing : RUMSlidingMenuStateOpening;
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSlidingMenuStateChangeNotification object:@(state)];
+    
     if (self.rightViewVisible) {
         [self resetMenu];
     } else {
@@ -145,6 +152,9 @@ static const CGFloat kAnimationInitialVelocity = 10.0f;
 {
     NSAssert(self.leftViewController != nil, @"leftViewController must not be nil if attempting to reveal");
     
+    RUMSlidingMenuState state = self.leftViewVisible ? RUMSlidingMenuStateClosing : RUMSlidingMenuStateOpening;
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSlidingMenuStateChangeNotification object:@(state)];
+    
     if (self.leftViewVisible) {
         [self resetMenu];
     } else {
@@ -171,6 +181,8 @@ static const CGFloat kAnimationInitialVelocity = 10.0f;
 
 - (void)resetMenu
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSlidingMenuStateChangeNotification object:@(RUMSlidingMenuStateClosing)];
+    
     [self.invisibleTapView removeFromSuperview];
     [UIView animateWithDuration:kAnimationDuration
                           delay:0.0f

@@ -9,6 +9,11 @@
 #import "RUMSlidingMenuProtocol.h"
 #import "RUMSlidingMenuCenterProtocol.h"
 
+typedef NS_ENUM(NSInteger, RUMSlidingMenuState) {
+    RUMSlidingMenuStateOpening,
+    RUMSlidingMenuStateClosing
+};
+
 @interface RUMSlidingMenuViewController : UIViewController<RUMSlidingMenuProtocol>
 
 /*! Create an instance of RUMSlidingViewController with a central viewController and two optional view controllers
@@ -22,5 +27,7 @@
 - (instancetype)initWithRootViewController:(UIViewController<RUMSlidingMenuCenterProtocol> *)rootViewController
                         leftViewController:(UIViewController *)leftViewController
                        rightViewController:(UIViewController *)rightViewController;
+
+extern NSString *const kSlidingMenuStateChangeNotification;
 
 @end
