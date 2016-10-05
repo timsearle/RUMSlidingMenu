@@ -1,4 +1,4 @@
-# RUMSlidingMenu
+# RUMSlidingMenu - Deprecated / Unsupported
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/RUMSlidingMenu/badge.png)](http://cocoadocs.org/docsets/RUMSlidingMenu)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/RUMSlidingMenu/badge.png)](http://cocoadocs.org/docsets/RUMSlidingMenu)
